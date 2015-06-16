@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHolidayMonthPicker"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHolidayDatePicker"
+            android:layout_marginLeft="@dimen/margin_between_widgets"
+            android:layout_weight="2" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_happy_monday"
+            android:id="@+id/checkBoxIsHappyMonday"
+            android:layout_marginLeft="@dimen/margin_between_widgets"
+            android:textSize="@dimen/text_size_small"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_between_widgets">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_holiday_name"
+            android:id="@+id/editHolidayNameTextView"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+            <requestFocus/>
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHolidayNameEditText"
+            android:layout_marginLeft="@dimen/margin_between_widgets"
+            android:inputType="text" />
+    </LinearLayout>
+
+</LinearLayout>

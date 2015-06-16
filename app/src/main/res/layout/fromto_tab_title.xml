@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_bar"
+    android:textColor="@color/tab_text"
+    android:textSize="@dimen/text_size_normal"
+    android:paddingBottom="@dimen/padding_tab_bottom"
+    android:gravity="center" />

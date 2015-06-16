@@ -1,0 +1,31 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyTimetableActivity">
+
+    <item
+        android:id="@+id/action_update_timetable"
+        android:title="@string/update_timetable"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_setting_holidays"
+        android:title="@string/setting_holidays"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_setting_details"
+        android:title="@string/setting_details"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_test"
+        android:title="@string/test"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

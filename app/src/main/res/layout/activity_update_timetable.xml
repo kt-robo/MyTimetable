@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:background="@color/background_light"
+    tools:context=".UpdateTimetableActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/urlYearMonthPickers"
+        android:gravity="center_horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlYearPicker"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlMonthPicker"
+            android:layout_toRightOf="@id/urlYearPicker"
+            android:layout_marginLeft="@dimen/margin_between_widgets" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_update"
+        android:id="@+id/updateTimetableButton"
+        android:layout_below="@+id/urlYearMonthPickers"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_urls"
+        android:id="@+id/labelUrls"
+        android:layout_below="@+id/updateTimetableButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/margin_between_widgets"
+        android:paddingLeft="@dimen/padding_items_horizontal"
+        android:paddingRight="@dimen/padding_items_horizontal"
+        android:paddingTop="@dimen/padding_items_vertical"
+        android:paddingBottom="@dimen/padding_items_vertical"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/text_color"
+        android:background="@color/colorPrimaryLight"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <requestFocus/>
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/urlsContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/labelUrls">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/urlsContent"/>
+
+    </ScrollView>
+
+</RelativeLayout>

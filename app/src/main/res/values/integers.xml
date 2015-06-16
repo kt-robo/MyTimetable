@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="year_min">2015</integer>
+    <integer name="year_max">2050</integer>
+
+    <integer name="default_preference_app_widget_list_size">10</integer>
+    <integer name="appwidget_list_size_min">1</integer>
+    <integer name="appwidget_list_size_max">100</integer>
+
+</resources>

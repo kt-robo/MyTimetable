@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">My時刻表</string>
+
+    <!-- Activity Titles -->
+    <string name="my_timetable">My時刻表</string>
+    <string name="update_timetable">時刻表更新</string>
+    <string name="setting_holidays">休日設定</string>
+    <string name="setting_details">詳細設定</string>
+    <string name="test">てすと</string>
+
+    <!-- Dialog Titles -->
+    <string name="dialog_title_error">エラー！</string>
+    <string name="dialog_title_warn">警告</string>
+    <string name="dialog_title_add_holiday">休日の追加</string>
+    <string name="dialog_title_edit_holiday">休日の編集</string>
+    <string name="dialog_title_delete_holiday">休日の削除</string>
+
+    <!-- Messages -->
+    <string name="message_downloading_timetable">時刻表をダウンロードしています...</string>
+    <string name="message_saving_timetable">時刻表をデータベースに保存しています...</string>
+    <string name="message_update_timetable_completed">時刻表の更新が完了しました。</string>
+    <string name="message_delete_holiday">この休日を削除しますか？</string>
+    <string name="message_holiday_is_duplicated">休日が重複しています。</string>
+    <string name="message_holiday_name_is_not_specified">休日名が指定されていません。</string>
+    <string name="message_saving_holidays">休日情報をデータベースに保存しています...</string>
+    <string name="message_holidays_saved">休日情報を保存しました。</string>
+    <string name="message_details_saved">詳細設定を保存しました。</string>
+
+    <string name="message_error_network">ネットワークを使用できません。</string>
+    <string name="message_error_url_connect">URLに接続できません。\n(URL=%1$s)</string>
+    <string name="message_error_url_format">URLの書式が不正です。\n(URL=%1$s)</string>
+    <string name="message_error_communicate">通信エラーが発生しました。\n(URL=%1$s)\n(詳細：%2$s)</string>
+    <string name="message_error_parse_html">HTMLの解析に失敗しました。\n(URL=%1$s)\n(詳細：%2$s)</string>
+    <string name="message_error_no_timetable">時刻表が見つかりません。\n(URL=%1$s)</string>
+
+    <!-- Common Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+
+    <!-- Weekday/Holiday -->
+    <string name="weekday">平日</string>
+    <string name="holiday">土休</string>
+    <string name="weekday_for_url">平日</string>
+    <string name="holiday_for_url">土休</string>
+
+    <!-- FromTo -->
+    <string name="fromto_o2y">大船→横浜</string>
+    <string name="fromto_y2o">横浜→大船</string>
+    <string name="fromto_t2y">戸塚→横浜</string>
+    <string name="fromto_t2o">戸塚→大船</string>
+
+    <!-- Lines -->
+    <string name="line_t">東海道線</string>
+    <string name="line_y">横須賀線</string>
+    <string name="line_s">湘南新宿ライン</string>
+
+    <string name="line_t_for_url">東海道線</string>
+    <string name="line_y_for_url">横須賀線</string>
+    <string name="line_s_for_url">湘南新宿</string>
+
+    <!-- Marks -->
+    <string name="mark_day_attention">日</string>
+    <string name="mark_change_time">時</string>
+    <string name="mark_change_dest">区</string>
+    <string name="mark_start_station">始</string>
+    <string name="mark_other">他</string>
+
+    <!-- Stations -->
+    <string name="station_o">大船</string>
+    <string name="station_y">横浜</string>
+    <string name="station_t">戸塚</string>
+
+    <!-- Up/Down -->
+    <string name="up">上り</string>
+    <string name="down">下り</string>
+
+    <!-- for UpdateTimetableActivity -->
+    <string name="label_urls">ダウンロード元URL：</string>
+    <string name="button_text_update">時刻表を更新</string>
+
+    <!-- for SettingHolidaysActivity -->
+    <string name="button_text_add">追加</string>
+    <string name="button_text_edit">編集</string>
+    <string name="button_text_delete">削除</string>
+    <string name="button_text_save">保存</string>
+
+    <string name="label_happy_monday">ハッピー\nマンデー</string>
+    <string name="label_holiday_name">休日名：</string>
+
+    <string-array name="month_names">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+    <string-array name="date_suffixes">
+        <item>日</item>
+        <item>日</item>
+        <item>日</item>
+        <item>日</item>
+    </string-array>
+
+    <string-array name="mondays">
+        <item>第1月曜日</item>
+        <item>第2月曜日</item>
+        <item>第3月曜日</item>
+        <item>第4月曜日</item>
+        <item>第5月曜日</item>
+    </string-array>
+
+    <!-- for SettingDetailsActivity -->
+    <string name="label_setting_appwidget">ウィジェットの設定：</string>
+    <string name="label_appwidget_list_size">ウィジェットのリストサイズ：</string>
+    <string name="label_setting_urls">URLプレフィックスとサフィックスの設定：</string>
+    <string name="label_prefix">プレフィックス</string>
+    <string name="label_suffix">サフィックス</string>
+
+    <!-- for AppWidget -->
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

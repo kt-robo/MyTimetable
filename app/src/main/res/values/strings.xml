@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">MyTimetable</string>
+
+    <!-- Activity Titles -->
+    <string name="my_timetable">My Timetable</string>
+    <string name="update_timetable">Update Timetable</string>
+    <string name="setting_holidays">Setting Holidays</string>
+    <string name="setting_details">Setting Details</string>
+    <string name="test">Test</string>
+
+    <!-- Dialog Titles -->
+    <string name="dialog_title_error">Error!</string>
+    <string name="dialog_title_warn">Warning</string>
+    <string name="dialog_title_add_holiday">Add Holiday</string>
+    <string name="dialog_title_edit_holiday">Edit Holiday</string>
+    <string name="dialog_title_delete_holiday">Delete Holiday</string>
+
+    <!-- Messages -->
+    <string name="message_downloading_timetable">Downloading timetable...</string>
+    <string name="message_saving_timetable">Saving timetable to database...</string>
+    <string name="message_update_timetable_completed">Update of the timetable has been completed.</string>
+    <string name="message_delete_holiday">Are you sure to delete this holiday?</string>
+    <string name="message_holiday_is_duplicated">Holiday is duplicated.</string>
+    <string name="message_holiday_name_is_not_specified">Holiday name is not specified.</string>
+    <string name="message_saving_holidays">Saving Holiday information to database...</string>
+    <string name="message_holidays_saved">Holiday information has been saved.</string>
+    <string name="message_details_saved">Detail settings has been saved.</string>
+
+    <!-- '%n$s'は埋め込み文字列（文字列なら$s、数値なら$d）。 -->
+    <!-- '\n'は改行。'¥n'ではダメで'\n'ならOK（なぜかは不明）。 -->
+    <string name="message_error_network">Cannot use the network.</string>
+    <string name="message_error_url_connect">Cannot connect to the URL.\n(URL=%1$s)</string>
+    <string name="message_error_url_format">Invalid URL format.\n(URL=%1$s)</string>
+    <string name="message_error_communicate">Communication error occurred.\n(URL=%1$s)\n(Detail:%2$s)</string>
+    <string name="message_error_parse_html">Failed to parse HTML.\n(URL=%1$s)\n(Detail:%2$s)</string>
+    <string name="message_error_no_timetable">No timetable data.\n(URL=%1$s)</string>
+
+    <!-- Common Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Weekday/Holiday -->
+    <string name="weekday">WEEKDAY</string>
+    <string name="holiday">HOLIDAY</string>
+    <string name="weekday_for_url">Weekday</string>
+    <string name="holiday_for_url">Holiday</string>
+
+    <!-- FromTo -->
+    <string name="fromto_o2y">O->Y</string>
+    <string name="fromto_y2o">Y->O</string>
+    <string name="fromto_t2y">T->Y</string>
+    <string name="fromto_t2o">T->O</string>
+
+    <!-- Lines -->
+    <string name="line_t">Toukaidou</string>
+    <string name="line_y">Yokosuka</string>
+    <string name="line_s">Shounan-Shinjuku</string>
+
+    <string name="line_t_for_url">Toukaido</string>
+    <string name="line_y_for_url">Yokosuka</string>
+    <string name="line_s_for_url">ShounanL</string>
+
+    <!-- Marks -->
+    <string name="mark_day_attention">Day</string>
+    <string name="mark_change_time">Tim</string>
+    <string name="mark_change_dest">Des</string>
+    <string name="mark_start_station">Sta</string>
+    <string name="mark_other">Oth</string>
+
+    <!-- Stations -->
+    <string name="station_o">Ofuna</string>
+    <string name="station_y">Yokohama</string>
+    <string name="station_t">Totsuka</string>
+
+    <!-- Up/Down -->
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+
+    <!-- for UpdateTimetableActivity -->
+    <string name="label_urls">URLs for download :</string>
+    <string name="button_text_update">Update of the timetable</string>
+
+    <!-- for SettingHolidaysActivity -->
+    <string name="label_happy_monday">Happy\nMonday</string>
+    <string name="label_holiday_name">Holiday Name :</string>
+
+    <string name="button_text_add">Add</string>
+    <string name="button_text_edit">Edit</string>
+    <string name="button_text_delete">Delete</string>
+    <string name="button_text_save">Save</string>
+
+    <string-array name="month_names">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="date_suffixes">
+        <item>th</item>
+        <item>st</item>
+        <item>nd</item>
+        <item>rd</item>
+    </string-array>
+
+    <string-array name="mondays">
+        <item>1st Monday</item>
+        <item>2nd Monday</item>
+        <item>3rd Monday</item>
+        <item>4th Monday</item>
+        <item>5th Monday</item>
+    </string-array>
+
+    <!-- for SettingDetailsActivity -->
+    <string name="label_setting_appwidget">Setting for AppWidget :</string>
+    <string name="label_appwidget_list_size">List size of AppWidget :</string>
+    <string name="label_setting_urls">Setting URL prefix and suffix :</string>
+    <string name="label_prefix">Prefix</string>
+    <string name="label_suffix">Suffix</string>
+
+    <!-- for AppWidget -->
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_between_widgets"
+    android:paddingRight="@dimen/margin_between_widgets"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_light"
+    tools:context=".SettingHolidaysActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/settingHolidayButtons">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text_add"
+            android:id="@+id/addHolidayButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text_edit"
+            android:id="@+id/editHolidayButton"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_between_widgets" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text_delete"
+            android:id="@+id/deleteHolidayButton"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_between_widgets" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/holidayList"
+        android:layout_below="@+id/settingHolidayButtons"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/saveHolidaysButton"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="@dimen/list_divider_size"
+        android:layout_marginTop="@dimen/margin_between_widgets"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/listSelected"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_save"
+        android:id="@+id/saveHolidaysButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_between_widgets" />
+
+</RelativeLayout>
