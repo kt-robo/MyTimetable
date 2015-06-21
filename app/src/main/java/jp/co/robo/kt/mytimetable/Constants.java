@@ -508,7 +508,7 @@ public class Constants {
 
         public static int getLine(int num) {
             // 路線は番号3個ずつで、T->Y->S->T->Y->S->...と変化する。
-            switch (num % 3) {
+            switch ((num / 2) % 3) {
                 case 0:
                     return(Lines.LINE_T);
                 case 1:
