@@ -44,6 +44,11 @@
     <color name="text_color_y">#283593</color>
     <color name="text_color_s">#00838F</color>
     -->
+    <color name="text_color_w">#000000</color>
+    <color name="text_color_w_t">#e37311</color>
+    <color name="text_color_w_y">#2834f3</color>
+    <color name="text_color_w_s">#15b79d</color>
+
     <color name="text_color">#000000</color>
     <color name="text_color_t">#a3480b</color>
     <color name="text_color_y">#151eb4</color>

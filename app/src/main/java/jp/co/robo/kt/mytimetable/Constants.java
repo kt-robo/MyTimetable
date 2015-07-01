@@ -319,6 +319,11 @@ public class Constants {
         private static int TEXT_COLOR_Y;
         private static int TEXT_COLOR_S;
 
+        private static int TEXT_COLOR_W;
+        private static int TEXT_COLOR_W_T;
+        private static int TEXT_COLOR_W_Y;
+        private static int TEXT_COLOR_W_S;
+
         private static final int KIND_NORMAL            = 0;
         private static final int KIND_EXPRESS           = 1;
         private static final int KIND_RAPID             = 2;
@@ -346,6 +351,11 @@ public class Constants {
             TEXT_COLOR_T = context.getResources().getColor(R.color.text_color_t);
             TEXT_COLOR_Y = context.getResources().getColor(R.color.text_color_y);
             TEXT_COLOR_S = context.getResources().getColor(R.color.text_color_s);
+
+            TEXT_COLOR_W = context.getResources().getColor(R.color.text_color_w);
+            TEXT_COLOR_W_T = context.getResources().getColor(R.color.text_color_w_t);
+            TEXT_COLOR_W_Y = context.getResources().getColor(R.color.text_color_w_y);
+            TEXT_COLOR_W_S = context.getResources().getColor(R.color.text_color_w_s);
         }
 
         public static int kind2BackgroundColor(int kind) {
@@ -392,6 +402,19 @@ public class Constants {
                     return(TEXT_COLOR_S);
                 default:
                     return(TEXT_COLOR);
+            }
+        }
+
+        public static int line2AppWidgetTextColor(int line) {
+            switch (line) {
+                case Lines.LINE_T:
+                    return(TEXT_COLOR_W_T);
+                case Lines.LINE_Y:
+                    return(TEXT_COLOR_W_Y);
+                case Lines.LINE_S:
+                    return(TEXT_COLOR_W_S);
+                default:
+                    return(TEXT_COLOR_W);
             }
         }
 

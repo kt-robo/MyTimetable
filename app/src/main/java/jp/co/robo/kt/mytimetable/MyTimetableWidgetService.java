@@ -66,7 +66,7 @@ public class MyTimetableWidgetService extends RemoteViewsService {
             TrainInformation item = mTrainInformation.get(position);
 
             int layout = Constants.Colors.kind2Layout(item.getKind());
-            int text_color = Constants.Colors.line2TextColor(item.getLine());
+            int text_color = Constants.Colors.line2AppWidgetTextColor(item.getLine());
 
             RemoteViews remoteViews = new RemoteViews(mContext.getPackageName(), layout);
 
