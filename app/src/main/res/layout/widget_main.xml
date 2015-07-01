@@ -66,6 +66,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/widgetListView"
         android:divider="@color/background"
-        android:dividerHeight="1dp"/>
+        android:dividerHeight="1dp"
+        android:background="#80ffffff"/>
 
 </LinearLayout>
