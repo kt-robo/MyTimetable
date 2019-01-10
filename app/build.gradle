@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "jp.co.robo.kt.mytimetable"
         minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
-        versionName "0.0.3"
+        versionName "0.0.4"
     }
     buildTypes {
         release {
@@ -20,7 +20,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile files('libs/tagsoup-1.2.1.jar')
+    implementation 'com.android.support:appcompat-v7:21.0.3'
+    implementation files('libs/tagsoup-1.2.1.jar')
 }
