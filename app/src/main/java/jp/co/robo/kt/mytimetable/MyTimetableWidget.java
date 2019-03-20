@@ -84,9 +84,9 @@ public class MyTimetableWidget extends AppWidgetProvider {
         int middleButtonImageId = (state.mIsMiddleOn)? R.mipmap.button_middle_on:R.mipmap.button_middle_off;
         remoteViews.setImageViewResource(R.id.imageMiddleButton, middleButtonImageId);
 
-        Intent appIntent = new Intent(context, MyTimetableActivity.class);
-        PendingIntent appPendingIntent = PendingIntent.getActivity(context, appWidgetId, appIntent, 0);
-        remoteViews.setOnClickPendingIntent(R.id.imageAppButton, appPendingIntent);
+        //Intent appIntent = new Intent(context, MyTimetableActivity.class);
+        //PendingIntent appPendingIntent = PendingIntent.getActivity(context, appWidgetId, appIntent, 0);
+        //remoteViews.setOnClickPendingIntent(R.id.imageAppButton, appPendingIntent);
 
         remoteViews.setRemoteAdapter(R.id.widgetListView, new Intent(context, MyTimetableWidgetService.class));
 

@@ -609,7 +609,7 @@ public class Constants {
                 KEY_SUFFIX_BASE + "_" + KEY_SUFFIX_STATION_T + "_" + KEY_SUFFIX_DOWN + "_" + KEY_SUFFIX_LINE_S + "_" + KEY_SUFFIX_HOLIDAY,
         };
 
-        public static final String DEFAULT_PREFIX = "http://www.jreast-timetable.jp/sp/";
+        public static final String DEFAULT_PREFIX = "https://www.jreast-timetable.jp/sp/";
         public static final String[] DEFAULT_SUFFIXES = {
                 // KEY_SUFFIXESと同じ並びとする。
                 "/timetable/tt0342/0342020.html",

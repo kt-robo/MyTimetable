@@ -20,44 +20,38 @@
             android:id="@+id/widgetFromToTextView" />
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:id="@+id/widgetDayTextView"
-            android:layout_marginLeft="@dimen/margin_between_widgets" />
-
-        <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin_between_widgets"
+            android:layout_weight="3" />
+
+        <ImageButton
             android:id="@+id/imageUpButton"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
-            android:background="@null"/>
-
-        <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_between_widgets"
             android:layout_weight="1"
-            android:id="@+id/imageDownButton"
-            android:layout_marginLeft="4dp"
-            android:background="@null"/>
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/imageMiddleButton"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
-            android:background="@null"/>
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/imageAppButton"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
             android:background="@null"
-            android:src="@drawable/app_button"/>
+            android:contentDescription="@string/button_name_up" />
+
+        <ImageButton
+            android:id="@+id/imageDownButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@string/button_name_down" />
+
+        <ImageButton
+            android:id="@+id/imageMiddleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_between_widgets"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@string/button_name_mid" />
 
     </LinearLayout>
 

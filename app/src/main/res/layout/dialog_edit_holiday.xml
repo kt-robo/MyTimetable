@@ -23,10 +23,10 @@
             android:layout_weight="1" />
 
         <NumberPicker
+            android:id="@+id/editHolidayDatePicker"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editHolidayDatePicker"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
+            android:layout_marginStart="@dimen/margin_between_widgets"
             android:layout_weight="2" />
 
         <CheckBox
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="@string/label_happy_monday"
             android:id="@+id/checkBoxIsHappyMonday"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
+            android:layout_marginStart="@dimen/margin_between_widgets"
             android:textSize="@dimen/text_size_small"
             android:layout_weight="2" />
 
@@ -61,8 +61,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editHolidayNameEditText"
-            android:layout_marginLeft="@dimen/margin_between_widgets"
-            android:inputType="text" />
+            android:layout_marginStart="@dimen/margin_between_widgets"
+            android:inputType="text"
+            android:importantForAutofill="no" />
     </LinearLayout>
 
 </LinearLayout>

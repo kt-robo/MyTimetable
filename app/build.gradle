@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "jp.co.robo.kt.mytimetable"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 21
         versionCode 1
         versionName "0.0.4"

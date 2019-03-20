@@ -12,63 +12,62 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/settingHolidayButtons"
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/settingHolidayButtons">
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/button_text_add"
             android:id="@+id/addHolidayButton"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_weight="1" />
-
-        <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/button_text_edit"
+            android:layout_weight="1"
+            android:text="@string/button_text_add" />
+
+        <Button
             android:id="@+id/editHolidayButton"
-            android:layout_alignParentTop="true"
-            android:layout_weight="1"
-            android:layout_marginLeft="@dimen/margin_between_widgets" />
-
-        <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/button_text_delete"
-            android:id="@+id/deleteHolidayButton"
-            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/margin_between_widgets"
             android:layout_weight="1"
-            android:layout_marginLeft="@dimen/margin_between_widgets" />
+            android:text="@string/button_text_edit" />
+
+        <Button
+            android:id="@+id/deleteHolidayButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_between_widgets"
+            android:layout_weight="1"
+            android:text="@string/button_text_delete" />
 
     </LinearLayout>
 
     <ListView
+        android:id="@+id/holidayList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/holidayList"
-        android:layout_below="@+id/settingHolidayButtons"
-        android:layout_alignParentLeft="true"
         android:layout_above="@+id/saveHolidaysButton"
-        android:divider="@color/colorPrimary"
-        android:dividerHeight="@dimen/list_divider_size"
+        android:layout_below="@+id/settingHolidayButtons"
+        android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/margin_between_widgets"
         android:choiceMode="singleChoice"
-        android:listSelector="@color/listSelected"/>
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="@dimen/list_divider_size"
+        android:listSelector="@color/listSelected" />
 
     <Button
+        android:id="@+id/saveHolidaysButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_text_save"
-        android:id="@+id/saveHolidaysButton"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/margin_between_widgets" />
+        android:layout_marginTop="@dimen/margin_between_widgets"
+        android:text="@string/button_text_save" />
 
 </RelativeLayout>

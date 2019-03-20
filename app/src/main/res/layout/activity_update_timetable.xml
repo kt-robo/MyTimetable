@@ -9,75 +9,70 @@
     tools:context=".UpdateTimetableActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/urlYearMonthPickers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/urlYearMonthPickers"
-        android:gravity="center_horizontal"
+        android:layout_alignParentStart="false"
+        android:clickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:clickable="false">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <NumberPicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/urlYearPicker"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <NumberPicker
+            android:id="@+id/urlMonthPicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/urlMonthPicker"
-            android:layout_toRightOf="@id/urlYearPicker"
-            android:layout_marginLeft="@dimen/margin_between_widgets" />
+            android:layout_marginStart="@dimen/margin_between_widgets" />
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/updateTimetableButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_text_update"
-        android:id="@+id/updateTimetableButton"
         android:layout_below="@+id/urlYearMonthPickers"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true"
+        android:text="@string/button_text_update" />
 
     <TextView
+        android:id="@+id/labelUrls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/label_urls"
-        android:id="@+id/labelUrls"
         android:layout_below="@+id/updateTimetableButton"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="@dimen/margin_between_widgets"
-        android:paddingLeft="@dimen/padding_items_horizontal"
-        android:paddingRight="@dimen/padding_items_horizontal"
-        android:paddingTop="@dimen/padding_items_vertical"
-        android:paddingBottom="@dimen/padding_items_vertical"
-        android:textSize="@dimen/text_size_large"
-        android:textColor="@color/text_color"
         android:background="@color/colorPrimaryLight"
         android:focusable="true"
-        android:focusableInTouchMode="true">
-        <requestFocus/>
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/padding_items_horizontal"
+        android:paddingTop="@dimen/padding_items_vertical"
+        android:paddingRight="@dimen/padding_items_horizontal"
+        android:paddingBottom="@dimen/padding_items_vertical"
+        android:text="@string/label_urls"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_large">
+
+        <requestFocus />
     </TextView>
 
     <ScrollView
+        android:id="@+id/urlsContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/urlsContainer"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/labelUrls">
+        android:layout_below="@id/labelUrls"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
+            android:id="@+id/urlsContent"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/urlsContent"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
 
     </ScrollView>
 
